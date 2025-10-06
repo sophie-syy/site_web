@@ -1,0 +1,169 @@
+body, html{
+    background-color: rgb(237, 27, 38);
+    height: 100vh;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.non_suligner{
+    text-decoration: none;
+}
+
+.color_w{
+    color: white;
+}
+
+.color_r{
+    color: rgb(237, 27, 38);
+}
+
+._espace{
+    margin-left: 1rem;
+}
+
+.espace_{
+    margin-right: 1rem;
+}
+
+.a_droite{
+    margin-left: auto; /* pousse à droite */
+}
+
+.en_ligne{
+    display: flex;
+}
+
+.hori{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.centre_h{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.centre_l{
+     min-height: 80vh;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.left {
+    left: 30px;
+}
+
+.right {
+    right: 30px;
+}
+
+.rectangle{
+    justify-content: space-between;
+    background-color: #f79827;
+    border-radius: 10px;
+    box-shadow: 6px 9px 8px rgb(19 51 145 / 36%);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+}
+
+.carre{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px; /*décendre 20px*/
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 2rem;
+    
+    background: rgba(237, 27, 38, 0.85);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.back_color_yes{
+    background-color: #bd141d;
+}
+
+.back_color_no{
+    background-color:#ff4444;
+}
+
+.button {
+    padding: 10px 24px;
+    background: rgb(237, 27, 38);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.total-bar {
+    position: fixed;
+    bottom: 0;
+    width: 97vw;
+    background: #222;
+    font-size: 1.3em;
+
+    padding: 1rem 2rem;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+#hero-slider {
+    margin: 0 auto; /*centre*/
+
+    /*ne deplace pas 900px*/
+    max-width: 900px; 
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    
+    position: relative; /*stoke place des bontton*/
+}
+
+#hero-slider img {
+    width: 100%;
+}
+
+label{
+    font-size: 20px; 
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 300px;        /* largeur */
+    padding: 12px;       /* espace intérieur */
+    font-size: 18px;     /* taille du texte */
+    border-radius: 8px;  /* coins arrondis */
+    border: none;        /* sans bordure */
+    margin-bottom: 15px; /* espace sous chaque champ */
+}
+
+input[type="submit"] {
+    width: 150px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    box-shadow : inset -6px -4px 4px #bd141d;
+}
