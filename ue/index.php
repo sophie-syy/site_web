@@ -1,4 +1,4 @@
-<?php include __DIR__ . "/reutiliser/head.php"; ?>
+<?php include __DIR__ . "/reutiliser/head.php"; ?> 
 
     <div id="hero-slider">
       <button class="slider-btn color_w left" id="prevBtn">&#8592;</button>
@@ -110,8 +110,7 @@
         </h2> 
       </div>
     </div>
-    <h3 class="text-center ">© 2025 univert_guyane ∙ Conditions ∙ Avis de collecte</h3>
-  </body>
-</html>
+
+<?php include __DIR__ . "/reutiliser/fin.php"; ?>
   
 

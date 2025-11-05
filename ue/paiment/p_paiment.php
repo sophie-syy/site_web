@@ -1,7 +1,11 @@
 <?php
 include __DIR__ . "/../reutiliser/connecte_sql.php";
 include __DIR__ . "/../reutiliser/head.php";
+?>
 
+<div id="global-wrapper">
+
+<?php
 // Récupérer l'id utilisateur
 $user_id = isset($_SESSION['user']['id']) ? $_SESSION['user']['id'] : null;
 
@@ -47,12 +51,13 @@ foreach ($panier as $item) {
         </div>';
 }
 ?>
-<div class="total-bar">
-    <span>Total: <span id="total-amount"><?php echo number_format($total, 2); ?> €</span></span>
-    <form method="post" action="/ue/paiment/f_acheter.php" style="margin-right: 20px;">
-        <input type="submit" class="button espace_" value="Acheter" />
-    </form>
-</div>
+        <div class="total-bar">
+            <span>Total: <span id="total-amount"><?php echo number_format($total, 2); ?> €</span></span>
+            <form method="post" action="/ue/paiment/f_acheter.php" style="margin-right: 20px;">
+                <input type="submit" class="button" value="Acheter" />
+            </form>
+        </div>
+    </div>
 </body>
 </html>
 

@@ -8,9 +8,9 @@
         <label for="email">Email:</label>
         <input type="text" id="email" name="email" required><br>
         <label for="password">Mot de passe:</label>
-        <input type="text" id="password" name="password" required><br>
+        <input type="password"  id="password" name="password" required><br>
         <label for="password_confirm">Confirmer le mot de passe:</label>
-        <input type="text" id="password_confirm" name="password_confirm" required><br>
+        <input type="password" id="password_confirm" name="password_confirm" required><br>
         <input type="submit" class="color_r" value="Entrer"><br>
     </form>
     <?php if (!empty($errors)): ?>

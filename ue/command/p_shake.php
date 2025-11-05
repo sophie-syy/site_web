@@ -18,5 +18,4 @@ foreach ($produits as $produit) {
     }
 }
 ?>
-</body>
-</html>
+<?php include __DIR__ . "/../reutiliser/fin.php"; ?>

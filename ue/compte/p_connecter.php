@@ -10,7 +10,7 @@ include __DIR__ . "/../reutiliser/head.php";
         <label for="email">Email:</label>
         <input type="text" id="email" name="email" required><br>
         <label for="password">Mot de passe:</label>
-        <input type="text" id="password" name="password" required><br>
+        <input type="password" id="password" name="password" required><br>
         <input type="submit" class="color_r" value="Entrer"><br>
     </form>
     <?php if (!empty($errors)): ?>

@@ -1,4 +1,5 @@
 <?php
+
 include __DIR__ . "/../reutiliser/connecte_sql.php"; 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

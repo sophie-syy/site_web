@@ -9,7 +9,7 @@ if (!isset($_SESSION['user'])) {
     exit;
 }
 
-// Vide le panier
+// Vider le panier
 $pdo->query("DELETE FROM panier");
 
 include __DIR__ . "/../reutiliser/head.php";

@@ -36,8 +36,13 @@
             <?php include __DIR__ ."/../compte/f_controler.php" ;?>
             
             <?php if (isset($_SESSION['user']['is_admin']) && $_SESSION['user']['is_admin']): ?>
-            <form class="centre_h _espace" action="/ue/admin/index.php" method="post">
-                <input class="color_w <?php echo ($_SERVER['SCRIPT_NAME'] === '/ue/admin/index.php') ? 'back_color_yes' : 'back_color_no'; ?>" 
+            <form class="centre_h _espace" action="/ue/admin/utilisateur_.php" method="post">
+                <input class="color_w <?php echo (
+                    $_SERVER['SCRIPT_NAME'] === '/ue/admin/utilisateur_.php' ||
+                    $_SERVER['SCRIPT_NAME'] === '/ue/admin/catégories.php' ||
+                    $_SERVER['SCRIPT_NAME'] === '/ue/admin/produits.php' ||
+                    $_SERVER['SCRIPT_NAME'] === '/ue/admin/utilisateurs.php' 
+                    ) ? 'back_color_yes' : 'back_color_no'; ?>" 
                     type="submit" value="Admin" />
             </form>
             <?php endif; ?>
